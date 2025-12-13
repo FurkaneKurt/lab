@@ -6,7 +6,7 @@ public class Patient {
     int age;
     Patient next;
 
-    public Patient(int id,String name, int severity, int age ){ //constructor for patient
+    public Patient(int id,String name, int severity, int age ){ //constructor for patient class
         this.id=id;
         this.name=name;
         this.severity=severity;
