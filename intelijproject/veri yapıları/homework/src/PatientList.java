@@ -1,4 +1,4 @@
-public class PatientList {
+public class PatientList {  // this is patientLinkendList
     Patient head;
 
     public PatientList() {
