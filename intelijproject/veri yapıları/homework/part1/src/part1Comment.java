@@ -1,3 +1,3 @@
 public class part1Comment {
-    //this part of comment in part1 for homwwork
+    //this part of comment in part1 for homework in the future it will be finish.
 }
