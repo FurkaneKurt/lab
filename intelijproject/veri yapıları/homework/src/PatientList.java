@@ -1,65 +1,38 @@
-public class PatientList {  // this is patientLinkendList
-    Patient head;
+public class PatientList {    // this is patientLinkendList
+    public Patient head ;
+    public Patient tail;
 
-    public PatientList() {
-        this.head = null;
+    public void addPatient(Patient p){          // this method for adding new patient to list
+        if (head == null){                     // firstly we check to list it have any patient
+            head = p;                          // if head = null we add new patient to head and head = tail
+            tail =p;
+            System.out.println("The patient was added to the head of the list.");
+        }else{                               // if are there any patient to list we add new patient to the end
+            tail.next =p;
+            tail = p;
+            System.out.println("The patient was added to the end of to list.");
+        }
     }
+    public void removePatient(int id){
 
-    public void addPatient(Patient p) {
-        if (head == null) {
-            head = p;
-        } else {
-            Patient current = head;
-            while (current.next != null) {
-                current = current.next;
+    }
+    public void findPatient(int id){
+
+
+    }
+    public void printList(){
+        if(head ==null){
+            System.out.println("There arent any patient on the list.");
+        }else{
+            Patient temp = head;
+            while (temp != null){
+                System.out.println(temp);
+                temp.next= temp;
             }
-            current.next = p;
-        }
-    }
-    public boolean removePatient(int id) {
-        Patient current = head;
-        Patient previous = null;
 
-
-        if (current != null && current.id == id) {
-            head = current.next;
-            return true;
         }
 
-        while (current != null && current.id != id) {
-            previous = current;
-            current = current.next;
-        }
-
-        if (current == null) {
-            return false;
-        }
-
-        previous.next = current.next;
-        return true;
-    }
-    public Patient findPatient(int id) {
-        Patient current = head;
-        while (current != null) {
-            if (current.id == id) {
-                return current;
-            }
-            current = current.next;
-        }
-        return null;
     }
 
-    public void printList() {
-        Patient current = head;
-        if (current == null) {
-            System.out.println("List is empty..");
-            return;
-        }
-        System.out.println("Patient List: ");
-        while (current != null) {
-            System.out.println(current.toString());
-            current = current.next;
-        }
-    }
 }
 
