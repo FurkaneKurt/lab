@@ -1,1 +1,14 @@
-This is for patr1
+First, let's talk about big OH. The addPatient method is found to be
+O(1) because I add patients to the end of the list, so big OH is found
+to be 1. In the removePatient method, because it has a while loop, big
+OH is found to be O(n). Similarly, it is the same in findPatient; it
+needs to iterate through the entire list to find the patient, so its
+big OH is also O(n).
+
+If we compare the time complexities of these methods in LinkedList and
+ArrayList, in array list, addPatient is O(n) because it needs to increase
+the size of the list, while LinkedList is O(1). For the removePatient method,
+both come out as O(n) at worst, and O(1) at best. However, LinkedList might
+be more advantageous because it doesn't need to change the size. For findPatient
+,both are O(n) because it checks each element individually. Both are preferable
+for this method.
