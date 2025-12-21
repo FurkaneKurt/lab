@@ -1,0 +1,19 @@
+Since queues operate on a first-in first-out basis,
+they are more suitable for a hospital environment
+because the first patient to arrive is the first to
+be examined; this is the most normal situation. However,
+if we were to use stacks, they would operate on a last-in
+last-out basis, which would not be very suitable for a
+hospital environment and would lead to unfairness.
+Therefore, using queues is more logical for our project.
+
+Comparing the time complexities of queue and stack, the
+insertion part is O(1) for both because the queue inserts
+the newly added data to the beginning, while the stack
+inserts it to the beginning; both of these situations are O(1).
+In element deletion, the queue deletes the last element of the list,
+meaning the first one added, while the stack deletes the last element
+added, meaning the first one added. However, both are O(1).
+Printing the list is O(n) for both because each element in the list
+is iterated through one by one.Both are equivalent in terms of time
+complexities, but logically, the queue is more useful for this part.
