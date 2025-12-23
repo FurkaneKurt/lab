@@ -1,0 +1,13 @@
+First of all, it's very useful for these operations because all
+operations on the stack are performed in the sum. We do both
+additions and subtractions with the sum. It's also very suitable
+for hospital discharge procedures because of the logic behind them,
+the last-in, first-out principle.
+
+If we used a queue, we would encounter problems due to the first-in,
+first-out principle; that is, instead of seeing a newly discharged patient,
+we would see a patient who was discharged a long time ago. Therefore, using
+a queue would be useless. While the stack and queue methods are O(1) for
+insertion and deletion, their print methods are also O(n) because they iterate
+through the entire list when printing. In short, although the time complexities
+are the same, the stack is more useful here due to its logical suitability.
