@@ -1,9 +1,9 @@
 public class TreatmentQueue {
-    public class Node{                           //A Node class is created to work with a linked list.
+    private class Node{                           //A Node class is created to work with a linked list.
         TreatmentRequest request;
         Node next;
 
-        public Node(TreatmentRequest request){
+        private Node(TreatmentRequest request){
             this.request = request;
             this.next = null;
 
