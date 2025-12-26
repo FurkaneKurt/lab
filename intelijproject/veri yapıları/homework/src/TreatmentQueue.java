@@ -30,19 +30,19 @@ public class TreatmentQueue {
         }
         size++;                              //Queues size is increases.
     }
-     public int dequeue(){                   //Deletes the element that was initially added to the list.
+     public TreatmentRequest dequeue(){                   //Deletes the element that was initially added to the list.
         if(isEmpty()){                       //It check queue empty or not.
             System.out.println("There are no patient on the list.");
-            return -1;                      //I had to add this, I kept getting errors.
+            return null;                               //I had to add this, I kept getting errors.
         }
-        int deletedID = front.request.patientId;   //I created this so I could print out the cancelled treatment request.
+        TreatmentRequest deletedRequest = front.request;   //I created this so I could print out the cancelled treatment request.
         front= front.next;
         if (front== null) {
             rear = null;
         }
-         System.out.println("The patiten with ID "+deletedID+"has been removed from list.");
+         System.out.println("The patiten with ID "+deletedRequest.patientId+"has been removed from list.");
          size--;
-        return deletedID;                 //I had to add this, I kept getting errors.
+         return deletedRequest;                           //I had to add this, I kept getting errors.
     }
     public int size() {                    //I used print to print the size.
         System.out.println("Size is : "+size);

@@ -1,0 +1,35 @@
+The time complexity of priority queue is O(1) because
+all we do is add or delete elements, and we do this with
+enqueu and dequeue. Therefore, we add to the beginning
+and delete to the end.In the sorting algorithm, the time
+complexity is O(n*n) because the algorithm contains nested
+do-while and while loops, resulting in a time complexity of O(n*n).
+Since we use hashmap, our time complexity for finding the
+patient is O(1) and the patient is found instantly because
+of the hashmap.
+
+The bubble sort we use separates patients into emergency and
+normal categories, but if we used heap sort, the most serious
+cases would always be at the top. The time complexity of bubble
+sort for adding and removing patients is O(n*n), while heap sort's
+is O(logn). In short, heap sort is a more professional solution for
+lists where not many patients are added.
+
+My explanation about tasks:
+
+Generally, when creating linked list queues and heaps, I didn't add
+much print in the HospitalSystem section to create the distributions
+that the system needs to write. Otherwise, I tried to do everything
+simply as requested. You can decide whether to use the bubble sort
+algorithm last. I used the isEmpty function as seen in the slides;
+I didn't use get and set methods in some parts, which would have been
+better, but I didn't use them because they weren't specifically requested.
+Overall, in terms of performance, perhaps using heap instead of bubble sort
+at the end would have been more beneficial, but I preferred that
+option because it was also available in the options you provided.
+In addition to these, I used a hashing algorithm as requested,
+which allowed us to quickly find patients. I also used milliseconds
+for the times; perhaps date format would have been more elegant, but I
+understood that the assignment required milliseconds, so I used that. I
+deliberately didn't use `size` in the stack because an operation involving
+`size` wasn't required. That's all for the assignment, thank you.
